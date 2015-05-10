@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTS.W.150401.Web", "CTS.W.150401.Web\CTS.W.150401.Web.csproj", "{BA9424FA-C33D-403A-8A57-AA58987BD548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CTS.W.150401.Models", "CTS.W.150401.Models\CTS.W.150401.Models.csproj", "{8E3ABAFB-D82A-4211-84BE-8E0729C19E02}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA9424FA-C33D-403A-8A57-AA58987BD548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9424FA-C33D-403A-8A57-AA58987BD548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9424FA-C33D-403A-8A57-AA58987BD548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA9424FA-C33D-403A-8A57-AA58987BD548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E3ABAFB-D82A-4211-84BE-8E0729C19E02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E3ABAFB-D82A-4211-84BE-8E0729C19E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E3ABAFB-D82A-4211-84BE-8E0729C19E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E3ABAFB-D82A-4211-84BE-8E0729C19E02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

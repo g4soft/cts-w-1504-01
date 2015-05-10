@@ -1,0 +1,4 @@
+D:\07_Projects\g4Soft\cts-w-1504-01\trunk\Src\CTS.W.150401\CTS.W.150401.Web\bin\CTS.W.150401.Web.dll
+D:\07_Projects\g4Soft\cts-w-1504-01\trunk\Src\CTS.W.150401\CTS.W.150401.Web\bin\CTS.W.150401.Web.pdb
+D:\07_Projects\g4Soft\cts-w-1504-01\trunk\Src\CTS.W.150401\CTS.W.150401.Web\obj\Release\CTS.W.150401.Web.dll
+D:\07_Projects\g4Soft\cts-w-1504-01\trunk\Src\CTS.W.150401\CTS.W.150401.Web\obj\Release\CTS.W.150401.Web.pdb

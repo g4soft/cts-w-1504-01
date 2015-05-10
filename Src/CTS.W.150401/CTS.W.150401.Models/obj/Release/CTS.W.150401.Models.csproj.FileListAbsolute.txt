@@ -1,0 +1,4 @@
+D:\07_Projects\g4Soft\cts-w-1504-01\trunk\Src\CTS.W.150401\CTS.W.150401.Models\bin\Release\CTS.W.150401.Models.dll
+D:\07_Projects\g4Soft\cts-w-1504-01\trunk\Src\CTS.W.150401\CTS.W.150401.Models\bin\Release\CTS.W.150401.Models.pdb
+D:\07_Projects\g4Soft\cts-w-1504-01\trunk\Src\CTS.W.150401\CTS.W.150401.Models\obj\Release\CTS.W.150401.Models.dll
+D:\07_Projects\g4Soft\cts-w-1504-01\trunk\Src\CTS.W.150401\CTS.W.150401.Models\obj\Release\CTS.W.150401.Models.pdb
