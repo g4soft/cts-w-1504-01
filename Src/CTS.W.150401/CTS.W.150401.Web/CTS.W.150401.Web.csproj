@@ -32,6 +32,36 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CTS.Com">
+      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Com.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Data">
+      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Data.APMenuItems">
+      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.APMenuItems.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Data.APStorageFiles">
+      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.APStorageFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Data.IMUsers">
+      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.IMUsers.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Data.MACodes">
+      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.MACodes.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Data.MACompanyInfos">
+      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.MACompanyInfos.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Data.MAParameters">
+      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.MAParameters.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Web.Com">
+      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Web.Com.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Web.Ucs">
+      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Web.Ucs.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -48,6 +78,9 @@
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="UrlRewritingNet.UrlRewriter">
+      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\UrlRewritingNet.UrlRewriter.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
