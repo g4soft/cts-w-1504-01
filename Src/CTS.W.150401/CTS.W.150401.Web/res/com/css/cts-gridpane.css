@@ -1,0 +1,9 @@
+﻿.cts-grid-pane .header td { background: #e7ebef url('/res/com/img/cts-tbl-headerbg.png') repeat-x left top; }
+.cts-grid-pane .header span.cts-sortasc { background: url("/res/com/img/cts-tbl-sortasc.png") no-repeat; }
+.cts-grid-pane .header span.cts-sortdesc { background: url("/res/com/img/cts-tbl-sortdesc.png") no-repeat; }
+.cts-grid-pane .header span.cts-sortboth { background: url("/res/com/img/cts-tbl-sortboth.png") no-repeat; }
+
+
+.cts-grid-pane .pagination { margin: 10px 0; float: right; }
+.cts-grid-pane .pagination a { margin: 0 2px; border: none; background: transparent; }
+.cts-grid-pane .pagination li.active a { color: black; background: #fee085 none; border: 1px solid #c27f31; }

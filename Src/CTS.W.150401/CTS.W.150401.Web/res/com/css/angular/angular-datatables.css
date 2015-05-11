@@ -1,0 +1,39 @@
+﻿
+
+/* -- PagerPane -- */
+.cts-grid-pane .pager
+{ padding: 5px; font: 11px Verdana; color: Black; border-collapse: separate; }
+.cts-grid-pane .pager-info
+{ float: left; color: Black; white-space: nowrap; text-align: center; vertical-align: middle; padding: 10px; display: inline-block; } 
+.cts-grid-pane .pager a.previous,
+.cts-grid-pane .pager a.next
+{ text-align: center; vertical-align: middle; }
+.cts-grid-pane .pager a.previous
+{ background-position: -50px 0px; width: 23px; height: 23px; }
+.cts-grid-pane .pager a.previous.disabled
+{ background-position: -50px -25px; width: 23px; height: 23px; }
+.cts-grid-pane .pager a.next
+{ background-position: -75px 0px; width: 23px; height: 23px; } 
+.cts-grid-pane .pager a.next.disabled
+{ background-position : -75px -25px; width: 23px; height: 23px; }
+.cts-grid-pane .pager a.previous,
+.cts-grid-pane .pager a.previous.disabled,
+.cts-grid-pane .pager a.next,
+.cts-grid-pane .pager a.next.disabled,
+.cts-grid-pane .pager span a
+{ display: inline-block; }
+.cts-grid-pane .pager span a
+{ text-align: center; vertical-align: middle; padding: 0 6px; } 
+.cts-grid-pane .pager span a.current
+{ color: black; background: #fee085 none; text-decoration: none; padding: 4px; border: 1px solid #c27f31; }
+.cts-grid-pane .pager a
+{ margin: 0 2px; cursor: pointer; }
+.cts-grid-pane .pager a.previous.disabled,
+.cts-grid-pane .pager a.next.disabled,
+.cts-grid-pane .pager span a.current
+{ cursor: default; }
+.cts-grid-pane .pager a.previous,
+.cts-grid-pane .pager a.previous.disabled,
+.cts-grid-pane .pager a.next,
+.cts-grid-pane .pager a.next.disabled
+{ background-image: url('/res/com/img/cts-pgr-icon.png.png'); background-repeat: no-repeat; background-color: transparent; }
