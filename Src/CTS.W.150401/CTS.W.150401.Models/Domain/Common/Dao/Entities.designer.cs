@@ -23,7 +23,7 @@ namespace CTS.W._150401.Models.Domain.Common.Dao
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="CTSW150401")]
-	public partial class EntitiesDataContext : System.Data.Linq.DataContext
+    public partial class EntitiesDataContext : CTS.Data.ContextBase
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();

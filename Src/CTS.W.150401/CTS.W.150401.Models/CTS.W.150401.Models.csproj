@@ -32,28 +32,34 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CTS.Com">
-      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Com.dll</HintPath>
+      <HintPath>..\..\..\Lib\CTS.Com.dll</HintPath>
     </Reference>
     <Reference Include="CTS.Data">
-      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.dll</HintPath>
+      <HintPath>..\..\..\Lib\CTS.Data.dll</HintPath>
     </Reference>
     <Reference Include="CTS.Data.APMenuItems">
-      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.APMenuItems.dll</HintPath>
+      <HintPath>..\..\..\Lib\CTS.Data.APMenuItems.dll</HintPath>
     </Reference>
     <Reference Include="CTS.Data.APStorageFiles">
-      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.APStorageFiles.dll</HintPath>
+      <HintPath>..\..\..\Lib\CTS.Data.APStorageFiles.dll</HintPath>
     </Reference>
     <Reference Include="CTS.Data.IMUsers">
-      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.IMUsers.dll</HintPath>
+      <HintPath>..\..\..\Lib\CTS.Data.IMUsers.dll</HintPath>
     </Reference>
     <Reference Include="CTS.Data.MACodes">
-      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.MACodes.dll</HintPath>
+      <HintPath>..\..\..\Lib\CTS.Data.MACodes.dll</HintPath>
     </Reference>
     <Reference Include="CTS.Data.MACompanyInfos">
-      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.MACompanyInfos.dll</HintPath>
+      <HintPath>..\..\..\Lib\CTS.Data.MACompanyInfos.dll</HintPath>
     </Reference>
     <Reference Include="CTS.Data.MAParameters">
-      <HintPath>..\..\..\..\..\cts-w-201411-01\Src\CTS.W.150101\CTS.W.150101.Web\bin\CTS.Data.MAParameters.dll</HintPath>
+      <HintPath>..\..\..\Lib\CTS.Data.MAParameters.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Web.Com">
+      <HintPath>..\..\..\Lib\CTS.Web.Com.dll</HintPath>
+    </Reference>
+    <Reference Include="CTS.Web.Ucs">
+      <HintPath>..\..\..\Lib\CTS.Web.Ucs.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Data.Schema, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.Data.Schema.UnitTesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
@@ -61,6 +67,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,23 +77,58 @@
   <ItemGroup>
     <Compile Include="Domain\Common\Constains\W150401Logics.cs" />
     <Compile Include="Domain\Common\Constains\W150401Pages.cs" />
+    <Compile Include="Domain\Common\Dao\Entities.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Entities.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Domain\Common\Dao\MasterDataComDao.cs" />
     <Compile Include="Domain\Common\Utils\MasterDataCom.cs" />
     <Compile Include="Domain\Dao\Admin\MasterItemsEntryDao.cs" />
+    <Compile Include="Domain\Dao\Client\CategoryDao.cs" />
     <Compile Include="Domain\Dao\Client\MainDao.cs" />
     <Compile Include="Domain\Logic\Admin\Main\InitLogic.cs" />
+    <Compile Include="Domain\Logic\Client\Index\InitLogic.cs" />
     <Compile Include="Domain\Logic\Client\Main\InitLogic.cs" />
+    <Compile Include="Domain\Logic\Client\Main\InitOperateLogic.cs" />
     <Compile Include="Domain\Model\Admin\Main\InitDataModel.cs" />
+    <Compile Include="Domain\Model\Client\Index\InitDataModel.cs" />
     <Compile Include="Domain\Model\Client\Main\InitDataModel.cs" />
     <Compile Include="Domain\Object\Admin\Items\ItemObject.cs" />
+    <Compile Include="Domain\Object\Client\CategoryObject.cs" />
     <Compile Include="Domain\Object\Client\ItemObject.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Domain\Common\Dao\Entities.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Entities.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\Common\Dao\sample.sql" />
     <Content Include="Resources\Dao\Admin\sample.sql" />
+    <EmbeddedResource Include="Resources\Dao\Client\CategoryDao_GetList.sql" />
     <Content Include="Resources\Dao\Client\sample.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Domain\Common\Dao\Entities.dbml.layout">
+      <DependentUpon>Entities.dbml</DependentUpon>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
