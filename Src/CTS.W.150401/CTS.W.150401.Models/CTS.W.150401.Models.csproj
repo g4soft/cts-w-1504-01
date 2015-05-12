@@ -91,9 +91,12 @@
     <Compile Include="Domain\Logic\Client\Index\InitLogic.cs" />
     <Compile Include="Domain\Logic\Client\Main\InitLogic.cs" />
     <Compile Include="Domain\Logic\Client\Main\InitOperateLogic.cs" />
+    <Compile Include="Domain\Logic\Client\Product\InitLogic.cs" />
+    <Compile Include="Domain\Logic\Client\Product\InitOperateLogic.cs" />
     <Compile Include="Domain\Model\Admin\Main\InitDataModel.cs" />
     <Compile Include="Domain\Model\Client\Index\InitDataModel.cs" />
     <Compile Include="Domain\Model\Client\Main\InitDataModel.cs" />
+    <Compile Include="Domain\Model\Client\Product\InitDataModel.cs" />
     <Compile Include="Domain\Object\Admin\Items\ItemObject.cs" />
     <Compile Include="Domain\Object\Client\CategoryObject.cs" />
     <Compile Include="Domain\Object\Client\ItemObject.cs" />
