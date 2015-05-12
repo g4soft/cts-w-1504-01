@@ -59,6 +59,7 @@
 
     <!-- Controllers -->
     <script type="text/javascript" src="/res/cln/js/controllers/main.js"></script>
+    <script type="text/javascript" src="/res/cln/js/controllers/product.js"></script>
 
     <!-- Libs CSS
 		============================================ -->
@@ -221,7 +222,9 @@
 							<section class="section_offset animated transparent" data-animation="fadeInDown">
 								<h3>Danh mục</h3>
 								<ul class="theme_menu cats" ng-hide="tblResult.ListData.length == 0" class="col-width" ng-repeat="category in tblResult.ListData">
-									<li class="has_megamenu"><a href="#" class="all"><b>{{category.CategoryCd}}</b></a></li>
+									<li class="has_megamenu">
+                                        <a href="/product" class="all"><b>{{category.CategoryCd}}</b></a>
+                                    </li>
 								</ul>
 							</section><!--/ .animated.transparent-->
 							<!-- - - - - - - - - - - - - - End of categories - - - - - - - - - - - - - - - - -->

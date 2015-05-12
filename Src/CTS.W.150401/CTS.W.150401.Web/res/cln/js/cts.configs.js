@@ -4,5 +4,9 @@ app.config(function ($routeProvider) {
         templateUrl: '/vws/cln/index.html',
         controller: 'IndexCtrl'
     });
+    $routeProvider.when('/product', {
+        templateUrl: '/vws/cln/product.html',
+        controller: 'ProductCtrl'
+    });
     $routeProvider.otherwise({ redirectTo: '/index' });
 });
