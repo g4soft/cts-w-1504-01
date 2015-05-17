@@ -57,9 +57,13 @@
     <script type="text/javascript" src="/res/com/jss/com-angular.js"></script>
     <script type="text/javascript" src="/res/com/jss/com-cts.js"></script>
 
+    <!-- Config -->
+    <script type="text/javascript" src="/res/cln/js/cts.configs.js"></script>
+
     <!-- Controllers -->
     <script type="text/javascript" src="/res/cln/js/controllers/main.js"></script>
     <script type="text/javascript" src="/res/cln/js/controllers/product.js"></script>
+    <script type="text/javascript" src="/res/cln/js/controllers/detail.js"></script>
 
     <!-- Libs CSS
 		============================================ -->
@@ -221,9 +225,9 @@
                         	<!-- - - - - - - - - - - - - - Categories - - - - - - - - - - - - - - - - -->
 							<section class="section_offset animated transparent" data-animation="fadeInDown">
 								<h3>Danh mục</h3>
-								<ul class="theme_menu cats" ng-hide="tblResult.ListData.length == 0" class="col-width" ng-repeat="category in tblResult.ListData">
-									<li class="has_megamenu">
-                                        <a href="/product" class="all"><b>{{category.CategoryCd}}</b></a>
+								<ul class="theme_menu cats" ng-hide="tblResult.ListData.length == 0" class="col-width">
+									<li class="has_megamenu" ng-repeat="category in tblResult.ListData">
+                                        <a href="/product/list/{{category.CategorySearchName}}" class="all"><b>{{category.CategoryName}}</b></a>
                                     </li>
 								</ul>
 							</section><!--/ .animated.transparent-->
@@ -283,10 +287,11 @@
                     <!-- - - - - - - - - - - - - - End of banners - - - - - - - - - - - - - - - - -->
                     <!-- - - - - - - - - - - - - - Main slider - - - - - - - - - - - - - - - - -->
                     <main class="col-md-9 col-sm-8">
-						
-						</main>
+					    <div ng-view="main" id="rightContent" class="panel-group" onload="loadViews()" />	
+					</main>
                     <!--/ [col]-->
                     <!-- - - - - - - - - - - - - - End of main slider - - - - - - - - - - - - - - - - -->
+                                        
                 </div>
                 <!--/ .row-->
             </div>

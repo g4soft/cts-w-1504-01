@@ -4,9 +4,13 @@ app.config(function ($routeProvider) {
         templateUrl: '/vws/cln/index.html',
         controller: 'IndexCtrl'
     });
-    $routeProvider.when('/product', {
+    $routeProvider.when('/product/list/:CategorySearchName', {
         templateUrl: '/vws/cln/product.html',
-        controller: 'ProductCtrl'
+        controller: 'ProductListCtrl'
+    });
+    $routeProvider.when('/product/detail/:ItemSearchName', {
+        templateUrl: '/vws/cln/detail.html',
+        controller: 'ProductDetailCtrl'
     });
     $routeProvider.otherwise({ redirectTo: '/index' });
 });
