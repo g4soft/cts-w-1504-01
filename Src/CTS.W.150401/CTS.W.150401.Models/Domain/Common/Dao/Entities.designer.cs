@@ -23,7 +23,7 @@ namespace CTS.W._150401.Models.Domain.Common.Dao
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="CTSW150401")]
-    public partial class EntitiesDataContext : CTS.Data.ContextBase
+	public partial class EntitiesDataContext : CTS.Data.ContextBase
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -64,12 +64,6 @@ namespace CTS.W._150401.Models.Domain.Common.Dao
     partial void UpdateSAAcceptDetail(SAAcceptDetail instance);
     partial void DeleteSAAcceptDetail(SAAcceptDetail instance);
     #endregion
-		
-		public EntitiesDataContext() : 
-				base(global::CTS.W._150401.Models.Properties.Settings.Default.CTSW150401ConnectionString, mappingSource)
-		{
-			OnCreated();
-		}
 		
 		public EntitiesDataContext(string connection) : 
 				base(connection, mappingSource)

@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CTSW150401" Class="EntitiesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=CTSW150401;Integrated Security=True" SettingsObjectName="CTS.W._150401.Models.Properties.Settings" SettingsPropertyName="CTSW150401ConnectionString" Provider="System.Data.SqlClient" />
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CTSW150401" Class="EntitiesDataContext" BaseType="CTS.Data.ContextBase" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Table Name="dbo.SAAcceptSlips" Member="SAAcceptSlips">
     <Type Name="SAAcceptSlip">
       <Column Name="AcceptSlipNo" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />

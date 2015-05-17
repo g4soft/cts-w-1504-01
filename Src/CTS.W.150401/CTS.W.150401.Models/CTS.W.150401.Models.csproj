@@ -86,17 +86,25 @@
     <Compile Include="Domain\Common\Utils\MasterDataCom.cs" />
     <Compile Include="Domain\Dao\Admin\MasterItemsEntryDao.cs" />
     <Compile Include="Domain\Dao\Client\CategoryDao.cs" />
+    <Compile Include="Domain\Dao\Client\ItemsDetailDao.cs" />
+    <Compile Include="Domain\Dao\Client\ItemsListDao.cs" />
     <Compile Include="Domain\Dao\Client\MainDao.cs" />
     <Compile Include="Domain\Logic\Admin\Main\InitLogic.cs" />
     <Compile Include="Domain\Logic\Client\Index\InitLogic.cs" />
     <Compile Include="Domain\Logic\Client\Main\InitLogic.cs" />
     <Compile Include="Domain\Logic\Client\Main\InitOperateLogic.cs" />
-    <Compile Include="Domain\Logic\Client\Product\InitLogic.cs" />
-    <Compile Include="Domain\Logic\Client\Product\InitOperateLogic.cs" />
+    <Compile Include="Domain\Logic\Client\Product\Detail\InitLogic.cs" />
+    <Compile Include="Domain\Logic\Client\Product\Detail\InitOperateLogic.cs" />
+    <Compile Include="Domain\Logic\Client\Product\List\FilterLogic.cs" />
+    <Compile Include="Domain\Logic\Client\Product\List\FilterOperateLogic.cs" />
+    <Compile Include="Domain\Logic\Client\Product\List\InitLogic.cs" />
+    <Compile Include="Domain\Logic\Client\Product\List\InitOperateLogic.cs" />
     <Compile Include="Domain\Model\Admin\Main\InitDataModel.cs" />
     <Compile Include="Domain\Model\Client\Index\InitDataModel.cs" />
     <Compile Include="Domain\Model\Client\Main\InitDataModel.cs" />
-    <Compile Include="Domain\Model\Client\Product\InitDataModel.cs" />
+    <Compile Include="Domain\Model\Client\Product\Detail\InitDataModel.cs" />
+    <Compile Include="Domain\Model\Client\Product\List\FilterDataModel.cs" />
+    <Compile Include="Domain\Model\Client\Product\List\InitDataModel.cs" />
     <Compile Include="Domain\Object\Admin\Items\ItemObject.cs" />
     <Compile Include="Domain\Object\Client\CategoryObject.cs" />
     <Compile Include="Domain\Object\Client\ItemObject.cs" />
@@ -123,6 +131,8 @@
     <Content Include="Resources\Common\Dao\sample.sql" />
     <Content Include="Resources\Dao\Admin\sample.sql" />
     <EmbeddedResource Include="Resources\Dao\Client\CategoryDao_GetList.sql" />
+    <EmbeddedResource Include="Resources\Dao\Client\ItemsListDao_GetPagerItems.sql" />
+    <EmbeddedResource Include="Resources\Dao\Client\ItemsDetailDao_GetInfo.sql" />
     <Content Include="Resources\Dao\Client\sample.sql" />
   </ItemGroup>
   <ItemGroup>
